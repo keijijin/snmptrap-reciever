@@ -10,6 +10,6 @@ public class FactProcessor implements Processor {
     public void process(Exchange exchange) throws Exception {
         String str = exchange.getIn().getBody(String.class);
         exchange.getIn().setBody("{\"oids\": " + str + "}");
-        log.info(exchange.getIn().getBody(String.class));
+        // log.info(exchange.getIn().getBody(String.class));
     }
 }
